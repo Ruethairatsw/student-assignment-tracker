@@ -1,0 +1,207 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f5fb;
+    color: #25253a;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #6755d9, #9182ed);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    color: #77758c;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #6755d9;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form-section,
+.assignment-section {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6755d9;
+}
+
+button {
+    background: #6755d9;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+button:hover {
+    background: #5140bd;
+}
+
+.assignment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 16px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.assignment-item h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.assignment-item p {
+    font-size: 13px;
+    color: #77758c;
+    margin-top: 4px;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.actions button {
+    margin: 0;
+    padding: 9px 12px;
+    font-size: 12px;
+}
+
+.complete-btn {
+    background: #249b67;
+}
+
+.delete-btn {
+    background: #e05252;
+}
+
+.completed h3 {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.status {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 12px;
+    background: #fff0d5;
+    color: #a66a00;
+}
+
+.status.done {
+    background: #dcf6e8;
+    color: #16834e;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+    padding: 25px;
+}
+
+footer {
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+    padding: 25px;
+}
+
+@media (max-width: 600px) {
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .assignment-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

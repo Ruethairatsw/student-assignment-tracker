@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Assignment Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Assignment Tracker</h1>
+        <p>จัดการการบ้านและติดตามกำหนดส่งของคุณ</p>
+    </header>
+
+    <main>
+        <section class="summary">
+            <div class="card">
+                <h3>การบ้านทั้งหมด</h3>
+                <p id="totalCount">0</p>
+            </div>
+
+            <div class="card">
+                <h3>ยังไม่ส่ง</h3>
+                <p id="pendingCount">0</p>
+            </div>
+
+            <div class="card">
+                <h3>ส่งแล้ว</h3>
+                <p id="completedCount">0</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>เพิ่มการบ้านใหม่</h2>
+
+            <form id="assignmentForm">
+                <label for="subject">ชื่อวิชา</label>
+                <input type="text" id="subject" placeholder="เช่น Database" required>
+
+                <label for="title">ชื่อการบ้าน</label>
+                <input type="text" id="title" placeholder="เช่น ออกแบบฐานข้อมูล" required>
+
+                <label for="dueDate">วันกำหนดส่ง</label>
+                <input type="date" id="dueDate" required>
+
+                <button type="submit">+ เพิ่มการบ้าน</button>
+            </form>
+        </section>
+
+        <section class="assignment-section">
+            <h2>รายการการบ้าน</h2>
+            <div id="assignmentList">
+                <p class="empty">ยังไม่มีรายการการบ้าน</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Student Assignment Tracker | My Personal Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
